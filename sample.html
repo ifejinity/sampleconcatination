@@ -1,0 +1,94 @@
+<!-- concat -->
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+    <style>
+        .container{
+            position: relative;
+            padding: 20px;
+            background-color: rgb(114, 111, 255);
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto;
+        }
+        .container2{
+            position: relative;
+            padding: 20px;
+            background-color: rgb(255, 255, 255);
+            margin: 3px;
+            border-radius: 50px;
+        }
+        .container3{
+            display: flex;
+            flex-direction: row;
+        }
+        .container input{
+            margin-bottom: 5px;
+            border-radius: 50px;
+            padding: 10px;
+            border-style: hidden;
+            position: relative;
+        }
+        .container button{
+            padding: 10px;
+            border-radius: 50px;
+            margin: 3px;
+            position: relative;
+            border-style: hidden;
+            background-color: white;
+            width: 90px;
+        }
+        .container input:hover{
+            background-color: antiquewhite;
+            padding: 15px;
+            transition: 0.3s;
+        }
+        .container input:focus{
+            background-color: antiquewhite;
+            padding: 15px;
+            transition: 0.3s;
+        }
+        .Submit:hover{
+            background-color: green;
+            color: white;
+        }
+        .Reset:hover{
+            background-color:red;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <input id="fname" type="text" placeholder="First name">
+        <input id="mname" type="text" placeholder="Middle name">
+        <input id="lname" type="text" placeholder="Last name">
+        <div class="container3">
+            <button class="Submit" type="button" onclick="myfunctionconcat()">Submit</button>
+            <button class="Reset" type="button" onclick="myfunctionreset()">Reset</button>
+        </div>
+        <div class="container2">
+            <p id="concat"></p>
+        </div>
+    </div>
+    <script>
+        function myfunctionconcat(){
+            var a = document.getElementById("fname").value;
+            var b = document.getElementById("mname").value;
+            var c = document.getElementById("lname").value;
+            document.getElementById("concat").innerHTML=a + " " + b + " " + c;
+        }
+        function myfunctionreset(){
+            document.getElementById("concat").innerHTML="";
+            document.getElementById("fname").value="";
+            document.getElementById("mname").value="";
+            document.getElementById("lname").value="";
+        }
+    </script>
+</body>
+</html>
