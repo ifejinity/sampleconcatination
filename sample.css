@@ -78,6 +78,14 @@
             background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
             border-radius: 50%;
             transition: 0.5s;
+            animation-name: circle1;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+        }
+        @keyframes circle1 {
+            0%{top: 50px;}
+            100%{top:100px;}
         }
         .circle2{
             height: 400px;
@@ -89,6 +97,14 @@
             background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
             border-radius: 50%;
             transition: 0.5s;
+            animation-name: circle2;
+            animation-duration: 2.5s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+        }
+        @keyframes circle2 {
+            0%{top: 50px;}
+            100%{top:100px;}
         }
         .circle3{
             height: 200px;
@@ -100,6 +116,14 @@
             background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
             border-radius: 50%;
             transition: 0.5s;
+            animation-name: circle3;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+        }
+        @keyframes circle3 {
+            0%{top: 350px;}
+            100%{top:400px;}
         }
         @media only screen and (max-width: 1600px) {
             .circle1{
@@ -135,8 +159,8 @@
                 left: 60%;
             }
             .circle3{
-                height: 80px;
-                width: 80px;
+                height: 150px;
+                width: 150px;
             }
             .container{
                 width:60%;  
