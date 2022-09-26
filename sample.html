@@ -1,0 +1,43 @@
+<!-- concat -->
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sample.css">
+    <title>Practice</title>
+</head>
+<body>
+    <div class="circle1"></div>
+    <div class="circle2"></div>
+    <div class="circle3"></div>
+    <div class="container">
+        <input id="fname" type="text" placeholder="First name">
+        <input id="mname" type="text" placeholder="Middle name">
+        <input id="lname" type="text" placeholder="Last name">
+        <div class="container3">
+            <button class="Submit" type="button" onclick="myfunctionconcat()">Submit</button>
+            <button class="Reset" type="button" onclick="myfunctionreset()">Reset</button>
+        </div>
+        <div class="container2">
+            <p id="concat"></p>
+        </div>
+        <p class="brand">Created by: Jeffrey Lonzanida</p>
+    </div>
+    <script>
+        function myfunctionconcat(){
+            var a = document.getElementById("fname").value;
+            var b = document.getElementById("mname").value;
+            var c = document.getElementById("lname").value;
+            document.getElementById("concat").innerHTML=a + " " + b + " " + c;
+        }
+        function myfunctionreset(){
+            document.getElementById("concat").innerHTML="";
+            document.getElementById("fname").value="";
+            document.getElementById("mname").value="";
+            document.getElementById("lname").value="";
+        }
+    </script>
+</body>
+</html>
