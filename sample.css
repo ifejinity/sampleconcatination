@@ -69,8 +69,8 @@
             font-size: 12px;
         }
         .circle1{
-            height: 200px;
-            width: 200px;
+            height: 300px;
+            width: 300px;
             top: 50px;
             left: 20%;
             position: fixed;
@@ -80,10 +80,10 @@
             transition: 0.5s;
         }
         .circle2{
-            height: 300px;
-            width: 300px;
+            height: 400px;
+            width: 400px;
             top: 50px;
-            left: 50%;
+            left: 60%;
             position: fixed;
             background: rgb(34,193,195);
             background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
@@ -91,10 +91,10 @@
             transition: 0.5s;
         }
         .circle3{
-            height: 100px;
-            width: 100px;
-            top: 300px;
-            left: 30%;
+            height: 200px;
+            width: 200px;
+            top: 350px;
+            left: 40%;
             position: fixed;
             background: rgb(131,58,180);
             background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
